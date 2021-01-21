@@ -139,7 +139,6 @@ a {
 
 @media screen and (max-width: 512px) {
   .card {
-    margin-top: 50px;
     width: 350px;
   }
 
@@ -152,6 +151,12 @@ a {
   .overview-child {
     margin-left: 5px;
     margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    width: 300px;
   }
 }
 
