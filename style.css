@@ -154,12 +154,6 @@ a {
   }
 }
 
-@media screen and (max-width: 320px) {
-  .card {
-    width: 300px;
-  }
-}
-
 .typewriter {
   font-family: "Lobster", cursive;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
