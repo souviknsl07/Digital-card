@@ -1,0 +1,187 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #e9ecf2 50%, #eb85ff 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+.card {
+  box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.2);
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.profile {
+  border: 2px solid white;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.overview {
+  border-top: 1px solid gray;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.overview > h3 {
+  margin-right: 280px;
+}
+
+.overview-child {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 10px;
+  margin-right: 40px;
+  margin-left: 40px;
+  align-items: center;
+}
+
+.info > p {
+  font-size: small;
+}
+
+.info > a {
+  margin-left: 8px;
+  font-size: small;
+}
+
+.info-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.contact-icon {
+  border-radius: 50%;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  height: 40px;
+  width: 40px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 512px) {
+  .card {
+    margin-top: 50px;
+    width: 350px;
+  }
+
+  .contact-icons {
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .overview-child {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+.typewriter {
+  font-family: "Lobster", cursive;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* border-right: 2px solid black; The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
