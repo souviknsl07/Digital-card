@@ -45,7 +45,7 @@ body {
 }
 
 .profile {
-  border: 2px solid white;
+  border: 2px solid lightgoldenrodyellow;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   height: 150px;
@@ -79,7 +79,7 @@ body {
 
 .overview-child {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
-  background-color: white;
+  background-color: lightyellow;
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -106,9 +106,10 @@ body {
 }
 
 .contact-icon {
+  background-color: lightgoldenrodyellow;
   border-radius: 50%;
   padding: 10px;
-  background-color: white;
+
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
   height: 40px;
   width: 40px;
@@ -154,21 +155,15 @@ a {
   }
 }
 
-@font-face {
-  font-family: prakrta;
-  src: url(prakrta_.ttf);
-}
-
 .typewriter {
-  font-family: prakrta;
+  font-family: "Lobster", cursive;
   text-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
-
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   /* border-right: 2px solid black; The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0; /* Adjust as needed */
-  animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 6s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 /* The typing effect */
